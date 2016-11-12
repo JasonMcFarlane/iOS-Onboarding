@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OnboardingVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OnboardingVC" customModule="OnboardginTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bEF-AH-pNW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cD4-xs-6iu">
+                                    <size key="itemSize" width="375" height="668"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingPageCell" id="0Qf-Ie-7RY" customClass="OnboardingPageCell" customModule="OnboardginTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-1" width="375" height="668"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO HIDDEN CHARGES OR FEES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLJ-lX-7Mm">
+                                                    <rect key="frame" x="57.5" y="343" width="260" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have a very small charge for non-Wonep calls to mobiles or landlines" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IN-Wh-tHK">
+                                                    <rect key="frame" x="37.5" y="389.5" width="300" height="33.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="jNY-pA-sJS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="0.54682112068965516" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding Screen 1" translatesAutoresizingMaskIntoConstraints="NO" id="bB6-aM-UVk">
+                                                    <rect key="frame" x="56" y="108" width="263" height="205"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="263" id="h8X-OX-DJE"/>
+                                                        <constraint firstAttribute="height" constant="205" id="jBr-4q-szS"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="2IN-Wh-tHK" firstAttribute="top" secondItem="GLJ-lX-7Mm" secondAttribute="bottom" constant="25" id="5AF-XG-ddP"/>
+                                            <constraint firstItem="GLJ-lX-7Mm" firstAttribute="top" secondItem="bB6-aM-UVk" secondAttribute="bottom" constant="30" id="9zm-kc-6Fi"/>
+                                            <constraint firstItem="2IN-Wh-tHK" firstAttribute="centerX" secondItem="0Qf-Ie-7RY" secondAttribute="centerX" id="Pa4-mo-o3v"/>
+                                            <constraint firstItem="GLJ-lX-7Mm" firstAttribute="centerX" secondItem="0Qf-Ie-7RY" secondAttribute="centerX" id="WGq-nd-wSY"/>
+                                            <constraint firstItem="bB6-aM-UVk" firstAttribute="top" secondItem="0Qf-Ie-7RY" secondAttribute="topMargin" constant="100" id="gih-I7-vau"/>
+                                            <constraint firstItem="bB6-aM-UVk" firstAttribute="centerX" secondItem="0Qf-Ie-7RY" secondAttribute="centerX" id="vOf-tK-cJy"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="bB6-aM-UVk" id="afe-xy-nfv"/>
+                                            <outlet property="messageLabel" destination="2IN-Wh-tHK" id="JWb-Lc-gsa"/>
+                                            <outlet property="titleLabel" destination="GLJ-lX-7Mm" id="NY9-nA-vxw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="9au-Nx-QOX">
+                                <rect key="frame" x="75" y="525" width="225" height="112"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbb-bl-adh" customClass="OnboardingButton" customModule="OnboardginTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="zwq-Wl-Bx7"/>
+                                        </constraints>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                <color key="value" red="0.0" green="0.65098039215686276" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextPageButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kkp-fE-zRP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVh-da-vaq">
+                                        <rect key="frame" x="0.0" y="83" width="225" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Skip">
+                                            <color key="titleColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="J7U-gU-VME"/>
+                                </constraints>
+                            </stackView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Va2-pf-ia6">
+                                <rect key="frame" x="168" y="450" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.078431372549019607" green="0.6470588235294118" blue="0.95686274509803926" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.078431372549019607" green="0.6470588235294118" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bEF-AH-pNW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bc6-4r-YLg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bEF-AH-pNW" secondAttribute="bottom" id="DMG-YT-u4e"/>
+                            <constraint firstItem="Va2-pf-ia6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDW-pt-njS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Va2-pf-ia6" secondAttribute="bottom" constant="180" id="Flb-AY-ONv"/>
+                            <constraint firstItem="bEF-AH-pNW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XAd-tI-CGd"/>
+                            <constraint firstAttribute="trailing" secondItem="bEF-AH-pNW" secondAttribute="trailing" id="lTz-5i-tWz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9au-Nx-QOX" secondAttribute="bottom" constant="30" id="qBi-sT-Yse"/>
+                            <constraint firstItem="9au-Nx-QOX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vBm-9R-CyY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="bEF-AH-pNW" id="FCc-al-6hM"/>
+                        <outlet property="nextButton" destination="gbb-bl-adh" id="iMS-g2-XEd"/>
+                        <outlet property="pageControl" destination="Va2-pf-ia6" id="VhK-gg-aDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Onboarding Screen 1" width="670" height="443"/>
+    </resources>
+</document>
